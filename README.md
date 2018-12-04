@@ -52,6 +52,15 @@ In this lab, we are going to write a Python program which can generate a network
 
 2. **Example of Mininet**
 
+   1) 先進到有example.py的src資料夾  
+     `cd /root/Network_Topology/src/`  
+   2) 測試example.py  
+     `sudo chmod +x example.py`*(Change to the executable mode)*  
+     `sudo ./example.py`  
+   3) 確認example.py成功後清除連線，避免之後要再跑檔案失敗  
+      或是檔案在第二步測試時失敗可輸入指令  
+     `sudo mn -c`
+
 
 3. **Topology Generator**
 
