@@ -54,7 +54,10 @@ In this lab, we are going to write a Python program which can generate a network
 
 > TODO: 
 > * Please add your references in the following
-
+* **Reference**
+    * [Mininet實驗 命令延伸實驗擴展](https://www.cnblogs.com/qq952693358/p/5882931.html)
+    * [自定義topo文檔解析](https://hk.saowen.com/a/bec15fcc5f83404bce2c3724394fa8e8e9404d8d52f049a925517f770619ff80)
+    * [Mininet 網路拓墣模擬](https://ithelp.ithome.com.tw/articles/10197633)
 * **Mininet**
     * [Mininet Walkthrough](http://mininet.org/walkthrough/)
     * [Introduction to Mininet](https://github.com/mininet/mininet/wiki/Introduction-to-Mininet)
