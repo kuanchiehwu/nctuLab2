@@ -40,6 +40,15 @@ In this lab, we are going to write a Python program which can generate a network
 
 1. **Environment Setup**
 
+   1) 加入GitHub Classroom，拿到Lab2的資料
+   2) 用SSH指令進入資料夾  
+      `ssh root@140.113.195.69 –p 16206`  
+      (密碼為cn2018)
+   3) 用clone指令登入GitHub帳號，進入資料夾中  
+      裡面有一個資料Network_Topology
+   4) 下載Mininet環境，並測試Mininet  
+      `sudo mn`
+    
 
 2. **Example of Mininet**
 
@@ -58,6 +67,7 @@ In this lab, we are going to write a Python program which can generate a network
     * [Mininet實驗 命令延伸實驗擴展](https://www.cnblogs.com/qq952693358/p/5882931.html)
     * [自定義topo文檔解析](https://hk.saowen.com/a/bec15fcc5f83404bce2c3724394fa8e8e9404d8d52f049a925517f770619ff80)
     * [Mininet 網路拓墣模擬](https://ithelp.ithome.com.tw/articles/10197633)
+    * [R Markdown 介紹](https://bookdown.org/tpemartin/rmarkdown_intro/markdown-syntax.html)
 * **Mininet**
     * [Mininet Walkthrough](http://mininet.org/walkthrough/)
     * [Introduction to Mininet](https://github.com/mininet/mininet/wiki/Introduction-to-Mininet)
