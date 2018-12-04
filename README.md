@@ -90,7 +90,15 @@ In this lab, we are going to write a Python program which can generate a network
       `sudo ./topology.py`  
 
 
-4. **Measurement**
+4. **Measurement**  
+
+   1) 等到topology.py跑完，會看到 mininet> 後面可以輸指令  
+   2) 在 mininet> 後用topo0.png適用的指令  
+      `h2 iperf -s -u -i 1 > ./out/result &`  
+      `h6 iperf -c 10.0.0.2 -u –i 1`  
+   3) 看packet loss有沒有在21% ~ 26%中  
+   4) 有在範圍內就可以截圖  
+      沒有的話就輸入`sudo mn -c`重跑一次topology.py
 
 ---
 ## References
