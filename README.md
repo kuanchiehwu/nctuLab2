@@ -80,7 +80,7 @@ In this lab, we are going to write a Python program which can generate a network
 > TODO:
 > * Please replace "YOUR_NAME" and "YOUR_GITHUB_LINK" into yours
 
-* [YOUR_NAME](YOUR_GITHUB_LINK)
+* [吳冠潔](https://github.com/)
 * [David Lu](https://github.com/yungshenglu)
 
 ---
