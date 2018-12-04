@@ -64,6 +64,31 @@ In this lab, we are going to write a Python program which can generate a network
 
 3. **Topology Generator**
 
+   1) 確認要用的topology  
+      學號後五碼16206%3=0 --> 用topo0.png  
+   2) 在src資料夾中建立topology.py  
+      `touch topology.py`  
+   3) 參照example.py  
+   4) 在topology.py中照著topo0.png建立switch、host、link  
+      * 建立switch  
+        `switch = self.addSwitch('s')`  
+      * 建立host  
+        `host = self.assHost('h')`  
+      * 建立link  
+        `self.addLink(host, switch, bw, delay, loss)`  
+   5) Dump every hosts’ connections  
+      `from mininet.util import dumpNodeConnections`  
+      \# *Dump every hosts’ and switches’ connections*  
+      `dumpNodeConnections(net.hosts)`  
+      `dumpNodeConnections(net.switches)`  
+   6) Enter in the Mininet’s CLI mode  
+      `from mininet.cli import CLI`
+      * 把example.py中的 net.stop()改成  
+      `CLI(net)`  
+   7) 跑topology.py  
+      `sudo chmod +x topology.py`*(Change to the executable mode)*  
+      `sudo ./topology.py`  
+
 
 4. **Measurement**
 
