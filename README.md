@@ -42,6 +42,20 @@ In this lab, we are going to write a Python program which can generate a network
 > TODO:
 > * Describe the meaning of Mininet API in Python you used in detail
 
+* Topo：Data center network representation for structured multi-trees  
+* OVSController：Open vSwitch controlle  
+* TCLink：Link with symmetric TC interfaces configured via opts  
+* dumpNodeConnections()：dumps connections to/from a set of nodes  
+* setLogLevel( 'info' | 'debug' | 'output' )：set Mininet's default output level; 'info' is recommended as it provides useful information  
+* CLI：命令行服務的文檔  
+* Host, Switch, and Link (consists of the base node and link classes) which can actually be instantiated individually and used to create a network.  
+* addHost(), addSwitch(), and addLink() for adding nodes and links to a network (adds the Mininet object which serves as a container for nodes and links)  
+* pingAll()：通過各個節點的互相ping來檢測網絡連通性  
+* self.addLink(node1, node2, bw = 10, delay = '5ms', loss = 10)：添加雙向鏈路、延遲和損失。bw表示頻寬的數值；delay表示一串計量字符，例如‘5ms'，’1s‘；loss表示丟失百分比（數值在0~100之間)  
+* net：包含了最重要的類，Mininet類，為定義一個網絡的類  
+* net.start()：啟動net  
+* CLI(net)：等待鍵入命令  
+
 ### iPerf Commands
 
 > TODO:
