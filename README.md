@@ -30,8 +30,8 @@ In this lab, we are going to write a Python program which can generate a network
 當進入到mininet環境時，就可以用topo0.png的iPerf commands來測量建造的topology.py  
 `h2 iperf -s -u -i 1 > ./out/result &`  
 `h6 iperf -c 10.0.0.2 -u –i 1`
-看執行loss的結果是否在21% ~ 26%，如果沒有就`sudo mn -c`重新執行一次，有在範圍內就是成功了  
-
+看執行loss的結果是否在21% ~ 26%，如果沒有就先退出mininet`exit`後，輸入`sudo mn -c`重新執行一次，有在範圍內就是成功了  
+![topology result](https://github.com/nctucn/lab2-kuanchiehwu/blob/master/topology%20result.png)
 
 ---
 ## Description
