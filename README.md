@@ -109,7 +109,8 @@ In this lab, we are going to write a Python program which can generate a network
     * [Mininet實驗 命令延伸實驗擴展](https://www.cnblogs.com/qq952693358/p/5882931.html)
     * [自定義topo文檔解析](https://hk.saowen.com/a/bec15fcc5f83404bce2c3724394fa8e8e9404d8d52f049a925517f770619ff80)
     * [Mininet 網路拓墣模擬](https://ithelp.ithome.com.tw/articles/10197633)
-    * [R Markdown 介紹](https://bookdown.org/tpemartin/rmarkdown_intro/markdown-syntax.html)
+    * [R Markdown 介紹](https://bookdown.org/tpemartin/rmarkdown_intro/markdown-syntax.html)  
+    * [在GitHub的README.md加入圖片及gif的方法](https://medium.com/@stephyang/在github的readme-md加入圖片及gif的方法-7282a4a63141)
 * **Mininet**
     * [Mininet Walkthrough](http://mininet.org/walkthrough/)
     * [Introduction to Mininet](https://github.com/mininet/mininet/wiki/Introduction-to-Mininet)
