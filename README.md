@@ -29,7 +29,7 @@ In this lab, we are going to write a Python program which can generate a network
 如果出現錯誤訊息*Exception: Error creating interface pair (s1-eth1,s2-eth1): RTNETLINK answers: File exists*的話，就先清除先前的檔案，用指令`sudo mn -c`，在重新輸入兩行sudo指令執行topology.py  
 當進入到mininet環境時，就可以用topo0.png的iPerf commands來測量建造的topology.py  
 `h2 iperf -s -u -i 1 > ./out/result &`  
-`h6 iperf -c 10.0.0.2 -u –i 1`
+`h6 iperf -c 10.0.0.2 -u –i 1`  
 看執行loss的結果是否在21% ~ 26%，如果沒有就先退出mininet，`exit`後，輸入`sudo mn -c`重新執行一次，有在範圍內就是成功了   
   
 ![topology result](https://github.com/nctucn/lab2-kuanchiehwu/blob/master/topology%20result.png)
@@ -61,6 +61,14 @@ In this lab, we are going to write a Python program which can generate a network
 > TODO:
 > * Describe the meaning of iPerf command you used in detail
 
+`h2 iperf -s -u -i 1 > ./out/result &`  
+`h6 iperf -c 10.0.0.2 -u –i 1`  
+* -s 啟動server模式  
+* -u 使用udp通訊規格  
+* -i sec 報告顯示的時間間隔(以秒為單位)  
+* -c 啟動client模式，命令後接server的位址  
+* The above commands will dump the result of iPerf’s measurement into the file result  
+  * /Network_Topology/src/out/result  
 
 ### Tasks
 
@@ -141,6 +149,7 @@ In this lab, we are going to write a Python program which can generate a network
     * [Mininet 網路拓墣模擬](https://ithelp.ithome.com.tw/articles/10197633)
     * [R Markdown 介紹](https://bookdown.org/tpemartin/rmarkdown_intro/markdown-syntax.html)  
     * [在GitHub的README.md加入圖片及gif的方法](https://medium.com/@stephyang/在github的readme-md加入圖片及gif的方法-7282a4a63141)
+    * [利用 iperf 測試網路效能](https://cms.35g.tw/coding/利用-iperf-測試網路效能/?fbclid=IwAR3QFgxlRzWOfvmHopmvGCQ3FxGIjye0CJ1vZxY97Zc6aEL7SOO62tz4MSw)
 * **Mininet**
     * [Mininet Walkthrough](http://mininet.org/walkthrough/)
     * [Introduction to Mininet](https://github.com/mininet/mininet/wiki/Introduction-to-Mininet)
