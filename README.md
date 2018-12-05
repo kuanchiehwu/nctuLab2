@@ -20,6 +20,19 @@ In this lab, we are going to write a Python program which can generate a network
 > * Describe how to execute your program
 > * Show the screenshot of using iPerf command in Mininet
 
+進到有topology.py的src資料夾中  
+`cd /root/Network_Topology/src/`  
+讓要跑的檔案topology.py進入executable mode，輸入指令  
+`sudo chmod +x example.py`  
+進入executable mode後，執行topology.py  
+`sudo ./example.py`  
+如果出現錯誤訊息*Exception: Error creating interface pair (s1-eth1,s2-eth1): RTNETLINK answers: File exists*的話，就先清除先前的檔案，用指令`sudo mn -c`，在重新輸入兩行sudo指令執行topology.py  
+當進入到mininet環境時，就可以用topo0.png的iPerf commands來測量建造的topology.py  
+`h2 iperf -s -u -i 1 > ./out/result &`  
+`h6 iperf -c 10.0.0.2 -u –i 1`
+看執行loss的結果是否在21% ~ 26%，如果沒有就`sudo mn -c`重新執行一次，有在範圍內就是成功了  
+
+
 ---
 ## Description
 
