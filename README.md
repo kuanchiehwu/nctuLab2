@@ -66,6 +66,7 @@ In this lab, we are going to write a Python program which can generate a network
 
    1) 確認要用的topology  
       學號後五碼16206%3=0 --> 用topo0.png  
+      ![topo0](https://github.com/nctucn/lab2-kuanchiehwu/blob/master/src/topo/topo0.png)
    2) 在src資料夾中建立topology.py  
       `touch topology.py`  
    3) 參照example.py  
